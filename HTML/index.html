@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <input type="image" src="../imagenes/car.jpg" id="fondo">
+    <div id= "contenido">
+        <header>
+            <section id="logo">
+                <input type="image" src="../imagenes/logoexa.png">
+            </section>
+            <section id="titulo">
+                <h1>Sistemas de Ventas - Exa01</h1><br>
+                <hr style="color:black"/>
+            </section>
+        </header>
+        
+        <nav>
+            <input type="submit" value="Inicio" class="input" onclick="inicio()">
+            <input type="submit" value="Ventas" class="input" onclick="ventas()">
+            <input type="submit" value="Clientes" class="input" onclick="clientes()">
+            <input type="submit" value="Productos" class="input" onclick="productos()">   
+        </nav>
+        <body>
+            <div id="inicio">
+                <label id="texto">Bienvenidos al Sistema de Ventas</label>
+            </div>
+
+
+            <div id=ventas>
+
+                <input class="textotil" type="text" disabled value="Venta" ><br>
+
+                <label>Cliente:</label><br>
+                <input type="text" id="cliente" disabled><button  id="boton" >Buscar</button><br> 
+                <label >Impuesto</label><br>
+                <input type="text" id="importe" disabled><button  id="bimport" >%</button><br>
+
+                <input type="submit" value="Buscar Articulos" id="buscararticuluos"><br>
+
+                <table id="tabla" border="1" style="margin: auto">
+                    <thead>
+                        <tr>    
+                            <th>Articulo</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                            <th>Elimnar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <label id="total">Total</label>
+                <input type="text" >
+
+
+            </div>
+
+            <div id="clientes">
+                    <input type="text" disabled value="Cliente" class="textotil"><br>
+
+
+                    <table id="tablaclientes" border="1" style="margin: auto">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Daniel</td>
+                                <td>Veka</td>
+                                <td><input type="button" id="add" value="add"></td>
+                            </tr>
+                            <tr>
+                                    <td>1</td>
+                                    <td>Kranmer</td>
+                                    <td>Ramos</td>
+                                    <td><input type="button" id="add" value="add"></td>
+                            </tr>
+                            <tr>
+                                    <td>1</td>
+                                    <td>Mario</td>
+                                    <td>Llori</td>
+                                    <td><input type="button" id="add" value="add"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+            </div>
+            <div id="productos">
+                    <input type="text" disabled value="Productos" class="textotil"><br>
+                    <table id="tablaproductos" style="margin: auto" border="1">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Stock</th>
+                                    <th>Cantidad</th>
+                                    <th>Accion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mouse</td>
+                                    <td>20</td>
+                                    <td>10</td>
+                                    <td><input type="text" id="cantidad"></td>
+                                    <td><input type="button" id="add" value="add"></td>
+                                </tr>
+                                <tr>
+                                        <td>2</td>
+                                        <td>Teclado</td>
+                                        <td>35</td>
+                                        <td>20</td>
+                                        <td><input type="text" id="cantidad"></td>
+                                        <td><input type="button" id="add" value="add"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Parlantes</td>
+                                    <td>150</td>
+                                    <td>5</td>
+                                    <td><input type="text" id="cantidad"></td>
+                                    <td><input type="button" id="add" value="add"></td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+
+
+
+            </div>
+        </body>
+
+    </div>
+
+
+
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>
